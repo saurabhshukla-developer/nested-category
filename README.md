@@ -23,7 +23,7 @@ A Laravel-based category management system that handles hierarchical parent-chil
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd test-category-management
+cd repository-name
 ```
 
 2. Install PHP dependencies:
@@ -54,6 +54,11 @@ DB_PORT=3306
 DB_DATABASE=test_category_management
 DB_USERNAME=your_username
 DB_PASSWORD=your_password
+TESTING_DATABASE=db_name_for_testing
+TEST_DB_DATABASE=laravel_testing
+TEST_DB_USERNAME=root
+TEST_DB_PASSWORD=
+TEST_DB_PORT=port_number
 ```
 
 7. Run migrations:
@@ -87,24 +92,6 @@ The system uses:
 Key configuration files:
 - `config/app.php` - Application settings
 - `config/database.php` - Database settings
-
-## Interface Screenshots
-
-### Category Listing
-![Category Listing](docs/screenshots/category-listing.png)
-*Main category listing page showing the grid with all categories*
-
-### Add Category Modal
-![Add Category](docs/screenshots/add-category.png)
-*Modal for adding new categories with parent selection*
-
-### Edit Category Modal
-![Edit Category](docs/screenshots/edit-category.png)
-*Modal for editing existing categories*
-
-### Delete Confirmation
-![Delete Category](docs/screenshots/delete-category.png)
-*Confirmation modal for deleting categories*
 
 ## Database Structure
 
